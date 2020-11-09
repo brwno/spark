@@ -1,0 +1,194 @@
+{
+	"Import Time Module" : {
+		"prefix": "timeModuleModule",
+		"body": "const TimeModule = require('Time');",
+		"description": "Import Time module"
+	}, 
+	"Import Device Motion" : {
+		"prefix": "deviceMotionModule",
+		"body": "const DeviceMotion = require('DeviceMotion');",
+		"description": "Import Device Motion"
+	}, 
+	"Import Diagnostics Module" : {
+		"prefix": "diagnosticsModule",
+		"body": "const Diagnostics = require('Diagnostics');",
+		"description": "Import Diagnostics Module"
+	}, 
+	"Import Animation Module" : {
+		"prefix": "animationModule",
+		"body": "const Animation = require('Animation');",
+		"description": "Import Animation Module"
+	}, 
+	"Import Face Tracking Module" : {
+		"prefix": "faceTrackingModule",
+		"body": "const FaceTracking = require('FaceTracking');",
+		"description": "Import Face Tracking Module"
+	}, 
+	"Import Audio Module" : {
+		"prefix": "audioModule",
+		"body": "const Audio = require('Audio');",
+		"description": "Import Audio Module"
+	}, 
+	"Import Camera Info Module" : {
+		"prefix": "cameraInfoModule",
+		"body": "const CameraInfo = require('CameraInfo');",
+		"description": "Import Camera Info Module"
+	}, 
+	"Import Face Gestures Module" : {
+		"prefix": "faceGesturesModule",
+		"body": "const FaceGestures = require('FaceGestures');",
+		"description": "Import Face Gestures Module"
+	}, 
+	"Import Deep Link Module" : {
+		"prefix": "deepLinkModule",
+		"body": "const DeepLink = require('DeepLink');",
+		"description": "Import Deep Link Module"
+	}, 
+	"Import Face Tracking 2D Module" : {
+		"prefix": "faceTracking2DModule",
+		"body": "const FaceTracking2D = require('FaceTracking2D');",
+		"description": "Import Face Tracking 2D Module"
+	}, 
+	"Import Fonts Module" : {
+		"prefix": "fontsModule",
+		"body": "const Fonts = require('Fonts');",
+		"description": "Import Fonts Module"
+	}, 
+	"Import Hand Tracking Module" : {
+		"prefix": "handTrackingModule",
+		"body": "const HandTracking = require('HandTracking');",
+		"description": "Import Hand Tracking Module"
+	}, 
+	"Import Instruction Module" : {
+		"prefix": "instructionModule",
+		"body": "const Instruction = require('Instruction');",
+		"description": "Import Instruction Module"
+	}, 
+	"Import Lighting Estimation Module" : {
+		"prefix": "lightingEstimationModule",
+		"body": "const LightingEstimation = require('LightingEstimation');",
+		"description": "Import Lighting Estimation Module"
+	}, 
+	"Import Locale Module" : {
+		"prefix": "localeModule",
+		"body": "const Locale = require('Locale');",
+		"description": "Import Locale Module"
+	}, 
+	"Import Live Streaming Module" : {
+		"prefix": "liveStreamingModule",
+		"body": "const LiveStreaming = require('LiveStreaming');",
+		"description": "Import Live Streaming Module"
+	}, 	
+	"Import Materials Module" : {
+		"prefix": "materialsModule",
+		"body": "const Materials = require('Materials');",
+		"description": "Import Materials Module"
+	}, 	
+	"Import Patches Module" : {
+		"prefix": "patchesModule",
+		"body": "const Patches = require('Patches');",
+		"description": "Import Patches Module"
+	}, 	
+	"Import UserScope Module" : {
+		"prefix": "userScope",
+		"body": "const userScope = Persistence.userScope;",
+		"description": "Import UserScope Module"
+	}, 
+		"Import Persistence Module" : {
+		"prefix": "persistenceModule",
+		"body": "const FaceTracking = require('Persistence');",
+		"description": "Import Persistence Module"
+	}, 
+	"Import Random Module" : {
+		"prefix": "randomModule",
+		"body": "const Random = require('Random');",
+		"description": "Import Random Module"
+	}, 
+	"Import Person Segmentation Module" : {
+		"prefix": "personSegmentationModule",
+		"body": "const PersonSegmentation = require('PersonSegmentation');",
+		"description": "Import Person Segmentation Module"
+	}, 
+	"Import Scene Module" : {
+		"prefix": "sceneModule",
+		"body": "const Scene = require('Scene');",
+		"description": "Import Scene Module"
+	}, 
+	"Import SVGs Module" : {
+		"prefix": "svgsModule",
+		"body": "const Svgs = require('Svgs');",
+		"description": "Import SVGs Module"
+	}, 
+	"Import Segmentation Module" : {
+		"prefix": "segmentationModule",
+		"body": "const Segmentation = require('Segmentation');",
+		"description": "Import Segmentation Module"
+	}, 
+	"Import Textures Module" : {
+		"prefix": "texturesModule",
+		"body": "const Textures = require('Textures');",
+		"description": "Import Textures Module"
+	}, 
+	"Import Units Module" : {
+		"prefix": "unitesModule",
+		"body": "const Units = require('Units');",
+		"description": "Import Units Module"
+	}, 
+	"Import Weather Module" : {
+		"prefix": "weatherModule",
+		"body": "const Weather = require('Weather');",
+		"description": "Import Weather Module"
+	}, 
+	"Import Reactive Module" : {
+		"prefix": "reactiveModule",
+		"body": "const Reactive = require('Reactive');",
+		"description": "Import Reactive Module"
+	}, 
+	"Native UI Picker": {
+		"prefix": "picker",
+		"body": [
+		
+			"const Scene = require('Scene');",
+			"const Materials = require('Materials');",
+			"const NativeUI = require('NativeUI');",
+			"const Textures = require('Textures');",
+			"Promise.all([",
+			"Textures.findFirst('1'),",
+			"Textures.findFirst('2'),",
+			"Textures.findFirst('3'),",
+			"Materials.findFirst('red'),",
+			"Materials.findFirst('green'),",
+			"Materials.findFirst('blue'),",
+			"Scene.root.findFirst('plane0'),",
+			"]).then(function(results){",
+			"const button1 = results[0];",
+			"const button2 = results[1];",
+			"const button3 = results[2];",
+			"const red = results[3];",
+			"const green = results[4];",
+			"const blue = results[5];",
+			"const plane = results[6];",
+			"const configuration = {",
+				"selectedIndex: 1,",
+				"items: [",
+				"{image_texture: button1},",
+					"{image_texture: button2},",
+					"{image_texture: button3}",
+				  "],",
+				" mats: [",
+				"{material: red},",
+					"{material: green},",
+					"{material: blue}",
+				  "]",
+				"};",
+			"const picker = NativeUI.picker;",
+			"picker.configure(configuration);",
+				"picker.visible = true;",
+				"picker.selectedIndex.monitor({fireOnInitialValue: true}).subscribe(function(val) {",
+				 " plane.material = configuration.mats[val.newValue].material",
+				"});",
+		"});",
+		],
+		"description": "Insert Native UI Picker"
+	}, 
+}
