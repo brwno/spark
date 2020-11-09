@@ -1,4 +1,4 @@
-## Directory for content about Spark AR.
+## Directory for contents about Spark AR.
 
 ## spark-ar-snippets 
 
